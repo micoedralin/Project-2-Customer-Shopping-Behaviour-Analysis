@@ -1,4 +1,4 @@
--- What is the most popular payment methods? --
+-- What are the most popular payment methods? --
 
 SELECT
     COUNT(*) AS total_payments,
