@@ -1,0 +1,26 @@
+-- Creates a table customer_behavior, and add in column names and their respective data types --
+
+CREATE TABLE customer_behavior
+
+(
+    customer_id INT PRIMARY KEY,
+    age INT,
+    gender VARCHAR(10),
+    item_purchased TEXT,
+    category VARCHAR(20),
+    purchase_amount INT,
+    purchase_location TEXT,
+    size VARCHAR(10),
+    color VARCHAR(20),
+    season VARCHAR(10),
+    review_rating NUMERIC(6,2),
+    subscription_status VARCHAR(10),
+    discount_applied VARCHAR(10),
+    previous_purchases INT,
+    payment_method TEXT,
+    purchase_frequency TEXT
+);
+
+
+-- Set ownership of the tables to the postgres user --
+ALTER TABLE public.customer_behavior OWNER to postgres
